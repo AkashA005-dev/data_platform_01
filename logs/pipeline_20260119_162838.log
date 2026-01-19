@@ -1,0 +1,4 @@
+2026-01-19 21:58:38,687 | INFO | PIPELINE | Pipeline Started 
+2026-01-19 21:58:38,690 | INFO | DEDUPLICATION | Input records count : 7 
+2026-01-19 21:58:38,690 | INFO | DEDUPLICATION | Unique records afte deduplication : 4 
+2026-01-19 21:58:38,690 | INFO | PIPELINE | Pipeline completed successfully 

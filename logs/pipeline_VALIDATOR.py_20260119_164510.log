@@ -1,0 +1,4 @@
+2026-01-19 22:15:10,597 | INFO | VALIDATOR |  Data Validation Started  
+2026-01-19 22:15:10,598 | INFO | VALIDATOR |  Data validation valid rows : 4  
+2026-01-19 22:15:10,599 | INFO | VALIDATOR |  Data validation Invalid row count :  2  
+2026-01-19 22:15:10,599 | INFO | VALIDATOR |  Validation Completed  

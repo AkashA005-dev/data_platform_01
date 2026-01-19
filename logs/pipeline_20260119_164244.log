@@ -1,0 +1,6 @@
+2026-01-19 22:12:44,897 | INFO | PIPELINE | Pipeline Started 
+2026-01-19 22:12:44,897 | INFO | VALIDATOR |  Data Validation Started  
+2026-01-19 22:12:44,899 | INFO | VALIDATOR |  Data validation valid rows : 4  
+2026-01-19 22:12:44,900 | INFO | VALIDATOR |  Data validation Invalid row count :  4  
+2026-01-19 22:12:44,901 | INFO | VALIDATOR |  Validation Completed  
+2026-01-19 22:12:44,901 | INFO | PIPELINE | Pipeline completed successfully 

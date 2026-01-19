@@ -1,0 +1,9 @@
+2026-01-19 22:01:45,004 | INFO | CLEANING | Starting cleaning of invalid Data 
+2026-01-19 22:01:45,007 | INFO | CLEANING | Cleaning completed. Cleaned=1, Rejected=0 
+2026-01-19 22:01:45,007 | INFO | CLEANING | Cleaning completed. Cleaned=2, Rejected=0 
+2026-01-19 22:01:45,007 | WARNING | CLEANING | Rejected row due to INVALID_USER_ID: {'user_id': 'abc', 'name': '123'} 
+2026-01-19 22:01:45,007 | INFO | CLEANING | Cleaning completed. Cleaned=2, Rejected=1 
+2026-01-19 22:01:45,008 | WARNING | CLEANING | Rejected row due to INVALID_USER_ID: {'user_id': '@23', 'name': '58'} 
+2026-01-19 22:01:45,008 | INFO | CLEANING | Cleaning completed. Cleaned=2, Rejected=2 
+2026-01-19 22:01:45,008 | INFO | CLEANING | Cleaning completed. Cleaned=3, Rejected=2 
+2026-01-19 22:01:45,010 | INFO | CLEANING | Cleaning completed. Cleaned=4, Rejected=2 
