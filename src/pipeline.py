@@ -1,0 +1,18 @@
+from src.cleaning.cleaner import clean_invalid_data
+from src.validation.validator import validate_data
+
+RAW_FILE = "data/raw/simple_invalid.csv"
+VALID_OUTPUT = "data/processed/valid_users.csv"
+INVALID_OUTPUT = "data/processed/invalid_users.csv"
+
+
+
+if __name__ == "__main__":
+
+    # validate_data(VALID_OUTPUT=VALID_OUTPUT , INVALID_OUTPUT=INVALID_OUTPUT , RAW_FILE=RAW_FILE)
+
+    clean_invalid_data(
+        input_path="data/invalid/invalid_data.csv",
+        cleaned_path="data/cleaned_rejected/cleaned_invalid_data.csv",
+        rejected_path="data/cleaned_rejected/rejected_data.csv"
+    )
