@@ -1,0 +1,13 @@
+{
+    "paths":{
+        "invalid_data" : "data/invalid/invalid_data.csv",
+        "cleaned_data" : "data/cleaned_rejected/cleaned_invalid_data.csv",
+        "rejected_data" : "data/cleaned_rejected/rejected_data.csv",
+        "final_output" : "data/processed/final_users.csv"
+    }
+    ,
+    "deduplication" : {
+        "primary_key" : "user_id"
+    }
+
+}
