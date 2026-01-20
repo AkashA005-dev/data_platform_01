@@ -1,0 +1,10 @@
+2026-01-20 19:15:32,944 | INFO | PIPELINE | Pipeline started with config-driven Paths 
+2026-01-20 19:15:32,950 | ERROR | PIPELINE | Pipeline Failed  
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\Fustration\data_platform_01\src\pipeline.py", line 35, in <module>
+    deduplicate(input_path=paths["cleaned_data"] ,  output_path=tmp_output)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\OneDrive\Desktop\Fustration\data_platform_01\src\deduplication\deduplicator.py", line 13, in deduplicate
+    open(temp_output, "w", newline="") as outfile:
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/_tmp/final_users.tmp.csv'

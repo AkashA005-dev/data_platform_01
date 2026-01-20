@@ -1,6 +1,8 @@
 import csv 
 from src.utils.logger import get_logger
 
+temp_output = "data/tmp/final_users.tmp.csv"
+
 def deduplicate(input_path , output_path):
     seen_user_ids = set()
 
@@ -8,7 +10,7 @@ def deduplicate(input_path , output_path):
     i1 , un = 0 , 0
 
     with open(input_path, newline="") as infile, \
-         open(output_path, "w", newline="") as outfile:
+         open(temp_output, "w", newline="") as outfile:
         
         reader = csv.DictReader(infile)
         writer = csv.DictWriter(outfile,fieldnames=reader.fieldnames)

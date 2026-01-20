@@ -1,0 +1,18 @@
+2026-01-20 19:14:14,386 | INFO | PIPELINE | Pipeline started with config-driven Paths 
+2026-01-20 19:14:14,386 | ERROR | PIPELINE | Pipeline Failed  
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\Fustration\data_platform_01\src\pipeline.py", line 29, in <module>
+    clean_invalid_data(
+    ~~~~~~~~~~~~~~~~~~^
+        input_path=paths["invalid_data"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        cleaned_path=paths["cleaned_data"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        rejected_path=paths["rejected_data"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\LENOVO\OneDrive\Desktop\Fustration\data_platform_01\src\cleaning\cleaner.py", line 33, in clean_invalid_data
+    with open(input_path, newline="") as infile, \
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/invalid1/invalid_data.csv'
