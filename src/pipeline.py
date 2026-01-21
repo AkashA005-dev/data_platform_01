@@ -4,6 +4,8 @@ from src.deduplication.deduplicator import deduplicate
 from src.utils.logger import get_logger
 from src.utils.config_loader import load_config
 from src.utils.safe_writer import atomic_writer
+from src.metrics.quality_metrics import generate_metrics , rejection_breakdown
+import json
 
 # RAW_FILE = "data/raw/simple_invalid.csv"
 # VALID_OUTPUT = "data/processed/valid_users.csv"
@@ -41,3 +43,17 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error("Pipeline Failed " , exc_info=True)
         raise
+
+    
+    metrics = generate_metrics(paths)
+
+    with open("reports/data_quality.json" , "w") as f:
+        json.dump(metrics, f , indent=2)
+
+    rejected_p = rejection_breakdown(paths["rejected_data"])
+
+    with open("reports/rejection_summary.json" , "w") as f:
+        json.dump(rejected_p , f , indent=2)
+    
+    logger.info(f"Data quality metrics generated: {metrics}")
+
